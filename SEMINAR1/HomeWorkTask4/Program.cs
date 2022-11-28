@@ -7,7 +7,7 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число C:");
 int numberC = Convert.ToInt32(Console.ReadLine());
 
-if (numberA & numberB == numberC) Console.WriteLine("Все числа равны и являются максимальным значением");
+if ((numberA & numberB) == numberC) Console.WriteLine("Все числа равны и являются максимальным значением");
 
 if (numberA > numberB)
     if (numberA > numberC) Console.WriteLine($"Max={numberA}");
