@@ -11,7 +11,12 @@ if (number > 9999 && number < 100000)
         int first2 = number / 1000;
         int first02 = first2 % 10;
         int last2 = number1 % 10;
-        Console.WriteLine($"Число {number} является палиндромом");
+        if (first02 == last2)
+            Console.WriteLine($"Число {number} является палиндромом");
+        else
+        {
+            Console.WriteLine($"Число {number} не является палиндромом");
+        }
     }
     else
     {
